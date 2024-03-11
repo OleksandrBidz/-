@@ -12,8 +12,7 @@ def uah_to_usd(amount, rate):
 
 def update_rate():
     global usd_to_uah_rate
-    usd_to_uah_rate = random.uniform(26, 28)  # оновлюємо курс долара
-
+    usd_to_uah_rate = random.uniform(26, 28)  
 
 def convert():
     amount = entry_amount.get()
@@ -37,7 +36,7 @@ def check_input(char):
 root = tk.Tk()
 root.title("Конвертер валют")
 
-usd_to_uah_rate = random.uniform(26, 28)  # Початковий курс долара
+usd_to_uah_rate = random.uniform(26, 28) 
 
 label_amount = tk.Label(root, text="Введи число:")
 label_amount.grid(row=0, column=0, padx=5, pady=5)
